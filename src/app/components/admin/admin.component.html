@@ -1,0 +1,32 @@
+<div class="adminTable">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Count</th>
+        <th>Date</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of productDetails" class="check">
+        <td>{{ data.id }}</td>
+        <td
+          [ngStyle]="{
+            background: styleInput == data.productName ? 'lightblue' : ' white'
+          }"
+        >
+          {{ data.productName }}
+        </td>
+        <td>{{ data.cost }}</td>
+        <td>{{ data.count }}</td>
+        <td>{{ data.date | dateModifier }}</td>
+        <td class="check">
+          {{ data.description | shorten: 10 }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

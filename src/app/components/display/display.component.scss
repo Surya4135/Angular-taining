@@ -1,0 +1,14 @@
+.displayContainer{
+    padding: 10px 16px;
+    input{
+        padding: 10px 20px;
+        margin-left: 32%;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    div{
+        display: flex;
+        justify-content: space-between;
+    }
+}
