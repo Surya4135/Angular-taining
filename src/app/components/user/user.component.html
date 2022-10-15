@@ -1,0 +1,23 @@
+<div class="userTable">
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Purchase</th>
+    </tr>
+    <tr *ngFor="let data of availabaleProduct">
+      <td>{{ data.id }}</td>
+      <td>{{ data.productName }}</td>
+      <td>{{ data.cost }}</td>
+      <td>
+        <button
+          (click)="buyProduct(data.id)"
+          [disabled]="data.count <= 0 ? true : false"
+        >
+          Buy
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

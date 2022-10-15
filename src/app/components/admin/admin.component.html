@@ -1,0 +1,16 @@
+<div class="adminTable">
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Cost</th>
+      <th>Count</th>
+    </tr>
+    <tr *ngFor="let data of productDetails">
+      <td>{{ data.id }}</td>
+      <td>{{ data.productName }}</td>
+      <td>{{ data.cost }}</td>
+      <td>{{ data.count }}</td>
+    </tr>
+  </table>
+</div>

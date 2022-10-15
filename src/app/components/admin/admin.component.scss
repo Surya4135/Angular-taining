@@ -1,0 +1,15 @@
+.adminTable{
+    border: 1px solid gray;
+    margin-left: 5%;
+   
+    th,td{
+        padding: 10px 20px;
+        text-align: left;
+        padding-bottom: 20px;
+        min-height: 30px;
+    }
+    td{
+        font-size: 18px;
+    }
+  
+}

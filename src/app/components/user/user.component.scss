@@ -1,0 +1,25 @@
+.userTable{
+    border: 1px solid gray;
+    margin-right: 5%;
+    min-height: 20px;
+    th,td{
+        padding: 10px 20px;
+        text-align: left;
+        padding-bottom: 13px;
+        min-height: 30px;
+    }
+    td{
+        font-size: 18px;
+    }
+    button{
+        padding: 8px 14px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 15px;
+        background-color: lightblue;
+        border: 1px solid gray;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+}

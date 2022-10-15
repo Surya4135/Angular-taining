@@ -1,0 +1,28 @@
+<div class="displayContainer">
+  <input
+    type="text"
+    required
+    placeholder="Search..."
+    [(ngModel)]="inputValue"
+    (input)="filteredProduct()"
+  />
+  <div>
+    <app-admin
+      [productDetails]="productDetails"
+      [getPurchaseid]="sentPuchaseid"
+      [filteredProductArr]="filteredProductArr"
+      [inputValue]="inputValue"
+    ></app-admin>
+    <app-user
+      [productDetails]="productDetails"
+      (purchaseid)="getPurchaseid($event)"
+      [availabaleProduct]="availableProductDetails"
+      [filteredAvailableProductArr]="filteredAvailableProductArr"
+      [inputValue]="inputValue"
+    >
+    </app-user>
+  </div>
+</div>
+<!--     [filteredProductArr]="filteredProductArr"
+(sentCheckCount)="getCheckcount($event)"
+[checkCount]="sentCheckCountTouser" -->
