@@ -1,0 +1,15 @@
+<ul>
+  <li>
+    <a
+      routerLink="/"
+      routerLinkActive="underline"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+  </li>
+  <li><a routerLink="/user" routerLinkActive="underline">User</a></li>
+  <li><a routerLink="/admin" routerLinkActive="underline">Admin</a></li>
+</ul>
+<div>
+  <router-outlet></router-outlet>
+</div>

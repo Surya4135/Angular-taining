@@ -1,0 +1,40 @@
+<div>
+  <input
+    type="text"
+    placeholder="Serach..."
+    [(ngModel)]="inputValue"
+    (input)="getMathcedProduct()"
+  />
+</div>
+<div class="adminTable">
+  <table class="styled-table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Cost</th>
+        <th>Count</th>
+        <th>Date</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of productDetails" class="check">
+        <td>{{ data.id }}</td>
+        <td>
+          {{ data.productName }}
+        </td>
+        <td>{{ data.cost }}</td>
+        <td>{{ data.count }}</td>
+        <td>{{ data.date | dateModifier }}</td>
+        <td class="check">
+          {{ data.description | shorten: 10 }}
+        </td>
+        <!-- <span>{{ data.description }}</span> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- [ngStyle]="{
+            background: inputValue == data.productName ? 'lightblue' : ' white'
+          }" -->

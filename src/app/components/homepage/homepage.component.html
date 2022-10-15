@@ -1,0 +1,47 @@
+<div class="input_container">
+  <div class="productNameType">
+    <div>
+      <span>Product Name </span
+      ><input type="text" required [(ngModel)]="inputProductName" />
+    </div>
+    <div>
+      <span>Product Type </span>
+      <input type="text" required [(ngModel)]="inputProductType" />
+    </div>
+  </div>
+  <div class="cost_avail">
+    <div>
+      <span>Cost </span>
+      <input type="number" required [(ngModel)]="inputCost" />
+    </div>
+    <div>
+      <span>Avail</span>
+      <select [(ngModel)]="inputAvail">
+        <option value="true">True</option>
+        <option value="false">False</option>
+      </select>
+    </div>
+  </div>
+  <div class="date_describtion">
+    <div>
+      <span>Date </span>
+      <input
+        type="text"
+        required
+        [(ngModel)]="inputDate"
+        placeholder="dd-mm-yyyy"
+      />
+    </div>
+    <div>
+      <span>Description</span>
+      <input type="text" required [(ngModel)]="inputDesc" />
+    </div>
+  </div>
+  <div class="count_submit">
+    <div>
+      <span>Count </span>
+      <input type="number" required [(ngModel)]="inputCount" />
+    </div>
+    <button (click)="pushData()">Submit</button>
+  </div>
+</div>
